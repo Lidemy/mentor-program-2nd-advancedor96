@@ -17,5 +17,5 @@ function repeat(str, times) {
       result += str;
    }
    // console.log('2結果：', result);
-   return result;
+   return result; 
 }
