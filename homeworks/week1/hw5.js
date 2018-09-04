@@ -4,7 +4,7 @@ function join(str, concatStr) {
       if(i === 0){
          result += str[i]
       }else{
-         result += concatStr + str[i]
+         result += concatStr + str[i] 
       }
    }
    return result;
