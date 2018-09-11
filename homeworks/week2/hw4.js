@@ -8,9 +8,5 @@ function isPalindromes (str) {
    }
    return isSameChar
 }
-// console.log(isPalindromes(''))
-// console.log(isPalindromes('apple'))
-// console.log(isPalindromes('aaaaa'))
-// console.log(isPalindromes('applppa'))
 
 module.exports = isPalindromes

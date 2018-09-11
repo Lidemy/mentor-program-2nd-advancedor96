@@ -1,7 +1,7 @@
 function isPrime (n) {
    if (n === 1) { return false } // 1依規定，不是質數
    let isDivisible = false
-   for (let i = 2; i <= Math.ceil(n / 2); i++) {
+   for (let i = 2; i <= Math.ceil(n / 2); i++) { // 迴圈跑到一半就可以了
       if (n % i === 0) {
          isDivisible = true
          break
