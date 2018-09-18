@@ -73,10 +73,12 @@ ul, li{
 .block{
    display: inline-block;
     width: calc((100% - 40px) / 3);
+    transition: width .5s;
 }
 @media screen and (max-width: 747px){
    .block{
       width: 100%;
+      transition: width .5s;
    }
    .block ~ .block{
       /* background-color: red; */
