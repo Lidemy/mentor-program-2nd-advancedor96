@@ -12,6 +12,8 @@ __`<section>`__ 代表章節，表示相關但是不同的段落，段落tag裡�
 
 瀏覽器把所有元素都看成是一個矩形盒子模型，而CSS決定這些盒子的大小(width和height)、位置(position)、邊框(border)、內距(padding)、外距(margin)。
 
+![圖解](https://www.topalovich.com/wp-content/uploads/2017/09/Box_Model.png)
+
 ## 請問 display: inline, block 跟 inline-block 的差別是什麼？
 
 `display: inline` 是行內元素，元素的寬度與高度會隨著內容而改改，自動調整成一樣大小。  
@@ -26,6 +28,8 @@ __`<section>`__ 代表章節，表示相關但是不同的段落，段落tag裡�
 position 預為是 `static`。  
 只要 `position` 被設為另外3種之一，該元素就被設為「可定位元素」。   
 四個屬性發揮作用： `left`、`top`、`bottom`、`right`。
+
+![圖解](https://internetingishard.com/html-and-css/advanced-positioning/css-positioning-schemes-790d5b.png)
 
 `static` 定位為預設，瀏覽器會用自然的方式排列元素(由左到右、由上到下)  
 
