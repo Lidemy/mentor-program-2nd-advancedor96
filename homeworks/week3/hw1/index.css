@@ -1,6 +1,7 @@
 html, body{
    width: 100%;
-   height: 100%;
+   /* height: 100%; */
+   min-width: 360px;
    margin: 0;
    padding: 0;
 }
@@ -14,7 +15,7 @@ html, body{
    left: 0;
    padding: 0 10px;
 }
-.navbar .logo{
+.navbar .icon{
    font-size: 20px;
    line-height: 50px;
    display: inline-block;
@@ -33,7 +34,7 @@ ul, li{
    cursor: pointer;
    color: white;
 }
-.main{
+.hero-unit{
    margin-top: 50px;
    padding: 40px 0px;
    background: #e9ecef;
@@ -43,10 +44,10 @@ ul, li{
    margin: 0 auto;
    padding: 0px 20px;
 }
-.container h1{
+.container .title{
    font-size: 72px;
 }
-.container .p{
+.container .content{
    font-size: 16px;
    margin: 10px 0px;
 }
@@ -58,6 +59,9 @@ ul, li{
     padding: 15px 20px;
     display: inline-block;
     transition: background 0.3s;
+    border: 0; /* 因為用button，所以要設邊框為0*/
+    line-height: 1.4;
+    letter-spacing: 1.2px;
 }
 .container .button:hover{
    cursor: pointer;
@@ -82,7 +86,7 @@ ul, li{
 .block h3{
    font-size: 32px;
 }
-.block .p{
+.block .content{
    font-size: 16px;
    margin: 10px 0px;
 }
