@@ -42,12 +42,13 @@ body{
   align-content: flex-start;
   margin-left: 100px;
   padding: 10px 20px 10px 0;
-  transition: margin-left .4s;
+  transition: margin-left .3s;
 }
 .container .title{
   width: 100%;
   font-size: 42px;
 }
+
 .container p{
   font-size: 21px;
 }
