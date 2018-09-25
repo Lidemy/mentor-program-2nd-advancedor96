@@ -1,5 +1,4 @@
 let r = document.querySelectorAll('.btn');
-// console.log(r);
 let show = document.querySelector('.show');
 
 let process = '';
@@ -14,7 +13,12 @@ for(let i=0;i<r.length;i++){
       })
    }else if(r[i].dataset.d === '='){
       r[i].addEventListener('click', function(e){
-         alert('計算結果')
+         // console.log('目前字串：',process)
+
+         let result = eval(process);
+         result = Math.round(result * 100)/100;
+         process = '' // 內部歸零
+         show.innerHTML = result
       })
    }else if(r[i].dataset.d === 'back'){
       r[i].addEventListener('click', function(e){
