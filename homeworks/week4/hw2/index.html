@@ -8,24 +8,42 @@
    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-   <h1>程式導師實驗計畫第二期報名表單</h1>
-   <p>填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
-   <section class="section" id="emailSection">
-      <h3>電子郵件<span class="red">*</span></h3>
-      <input type="text" id="email"/>
+   <h1>雲端工作的難度調查</h1>
+   <section class="section" id="osSection">
+      <h3>你目前使用什麼作業系統？（可複選）<span class="red">*</span></h3>
+      <input type="checkbox" class="os" name='os[]' value='Windows'>
+      <label for="os1">Windows</label>
+      <input type="checkbox" class="os" name='os[]' value='Mac'>
+      <label for="os2">Mac</label>
+      <input type="checkbox" class="os" name='os[]' value='Linux'>
+      <label for="os3">Linux</label>
    </section>
 
-   <section class="section" id="typeSection">
-      <h3>報名類型</h3>
-      <input type="radio" name='type' value='1' id="type1">
-      <label for="type1">第1型</label>
-      <input type="radio" name='type' value='2' id="type2">
-      <label for="type2">第2型</label>
+   <section class="section" id="deviceSection">
+     <h3>你同時擁有幾台會使用的數位裝置？ <span class="red">*</span></h3>
+     <input type="text" id="device" />
+   </section>
+
+   <section class="section" id="feelSection">
+      <h3>你對目前使用雲端工作的整體滿意度為？<span class="red">*</span></h3>
+      <input type="radio" class="feel" name='feel[]' value='1'>
+      <label for="feel1">1</label>
+      <input type="radio" class="feel" name='feel[]' value='2'>
+      <label for="feel2">2</label>
+      <input type="radio" class="feel" name='feel[]' value='3'>
+      <label for="feel3">3</label>
+      <input type="radio" class="feel" name='feel[]' value='4'>
+      <label for="feel4">4</label>
+      <input type="radio" class="feel" name='feel[]' value='5'>
+      <label for="feel5">5</label>
    </section>
 
    <section class="section" id="otherSection">
       <h3>其他補充(非必填)</h3>
       <input type="text" id="other"/>
    </section>
+
+   <button class="submit">送出</button>
+   <script src="./index.js"></script>
 </body>
 </html>
