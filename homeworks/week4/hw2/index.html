@@ -21,13 +21,14 @@
    <section class="section" id="emailSection">
       <h3>電子郵件地址<span class="red">*</span></h3>
       <input type="text" id="email" />
-      <h6 id='emailHint'></h6>
+      <h6 class="errorHint"></h6>
    </section>
+
    <section class="section" id="nicknameSection">
       <h3>暱稱<span class="red">*</span></h3>
       <h6>該如何稱呼你</h6>
       <input type="text" id="nickname" />
-      <h6 id='nicknameHint'></h6>
+      <h6 class='errorHint'></h6>
    </section>
 
    <section class="section" id="deviceSection">
@@ -37,17 +38,21 @@
      <br />
      <input type="radio" class="type" name='type[]' value='2' id="type2">
      <label for="type2">在職工程師加強班（一個月後開始收保證金 3000，兩個月時收學費 30000，被淘汰不退還）</label>
+     <h6 class='errorHint'></h6>
    </section>
 
   <section class="section" id="workSection">
     <h3>現在的職業<span class="red">*</span></h3>
     <h6>範例：學生、前端工程師、待業中、業務</h6>
     <input type="text" id="work" />
+    <h6 class='errorHint'></h6>
   </section>
+
   <section class="section" id="relativeSection">
     <h3>是否有程式相關背景？<span class="red">*</span></h3>
     <h6>範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課..</h6>
     <input type="text" id="relative" />
+    <h6  class='errorHint'></h6>
   </section>
   <section class="section" id="otherSection">
     <h3>其他</h3>
