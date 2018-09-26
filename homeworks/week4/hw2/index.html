@@ -8,40 +8,54 @@
    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-   <h1>雲端工作的難度調查</h1>
-   <section class="section" id="osSection">
-      <h3>你目前使用什麼作業系統？（可複選）<span class="red">*</span></h3>
-      <input type="checkbox" class="os" name='os[]' value='Windows'>
-      <label for="os1">Windows</label>
-      <input type="checkbox" class="os" name='os[]' value='Mac'>
-      <label for="os2">Mac</label>
-      <input type="checkbox" class="os" name='os[]' value='Linux'>
-      <label for="os3">Linux</label>
+   <h1>程式導師實驗計畫第二期報名表單</h1>
+   <p>
+    詳情請參考：https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b <br />
+    填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔
+   </p>
+
+   <section class="red">
+     *必填
+   </section>
+
+   <section class="section" id="emailSection">
+      <h3>電子郵件地址<span class="red">*</span></h3>
+      <input type="text" id="email" />
+      <h6 id='emailHint'></h6>
+   </section>
+   <section class="section" id="nicknameSection">
+      <h3>暱稱<span class="red">*</span></h3>
+      <h6>該如何稱呼你</h6>
+      <input type="text" id="nickname" />
+      <h6 id='nicknameHint'></h6>
    </section>
 
    <section class="section" id="deviceSection">
-     <h3>你同時擁有幾台會使用的數位裝置？ <span class="red">*</span></h3>
-     <input type="text" id="device" />
+     <h3>報名類型<span class="red">*</span></h3>
+     <input type="radio" class="type" name='type[]' value='1' id="type1">
+     <label for="type1">從零到一基礎班（一個月後開始收保證金 3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）</label>
+     <br />
+     <input type="radio" class="type" name='type[]' value='2' id="type2">
+     <label for="type2">在職工程師加強班（一個月後開始收保證金 3000，兩個月時收學費 30000，被淘汰不退還）</label>
    </section>
 
-   <section class="section" id="feelSection">
-      <h3>你對目前使用雲端工作的整體滿意度為？<span class="red">*</span></h3>
-      <input type="radio" class="feel" name='feel[]' value='1'>
-      <label for="feel1">1</label>
-      <input type="radio" class="feel" name='feel[]' value='2'>
-      <label for="feel2">2</label>
-      <input type="radio" class="feel" name='feel[]' value='3'>
-      <label for="feel3">3</label>
-      <input type="radio" class="feel" name='feel[]' value='4'>
-      <label for="feel4">4</label>
-      <input type="radio" class="feel" name='feel[]' value='5'>
-      <label for="feel5">5</label>
-   </section>
+  <section class="section" id="workSection">
+    <h3>現在的職業<span class="red">*</span></h3>
+    <h6>範例：學生、前端工程師、待業中、業務</h6>
+    <input type="text" id="work" />
+  </section>
+  <section class="section" id="relativeSection">
+    <h3>是否有程式相關背景？<span class="red">*</span></h3>
+    <h6>範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課..</h6>
+    <input type="text" id="relative" />
+  </section>
+  <section class="section" id="otherSection">
+    <h3>其他</h3>
+    <h6>任何你想說的</h6>
+    <input type="text" id="other" />
+  </section>
 
-   <section class="section" id="otherSection">
-      <h3>其他補充(非必填)</h3>
-      <input type="text" id="other"/>
-   </section>
+
 
    <button class="submit">送出</button>
    <script src="./index.js"></script>
