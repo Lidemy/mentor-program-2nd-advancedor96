@@ -9,7 +9,7 @@ nickname.addEventListener('blur', function(e){
   check('#nickname');
 });
 
-let type = document.querySelector('.type');
+let type = document.querySelectorAll('.type:checked');
 
 // 現在的職業
 let work = document.querySelector('#work');
@@ -32,6 +32,14 @@ btn.addEventListener('click', function(){
       document.querySelector('.type').parentNode.style.backgroundColor='pink'
     }else{
       document.querySelector('.type').parentNode.style.backgroundColor='rgba(0,0,0,0)'
+
+      console.log('email:',email.value)
+      console.log('nickname:',nickname.value)
+      console.log('type:',document.querySelectorAll('.type:checked')[0].value)
+      console.log('work:',work.value)
+      console.log('relative:',relative.value)
+      console.log('other:',document.querySelector('#other').value)
+      
       alert('表單送出，資料請看console')
     }
   }
