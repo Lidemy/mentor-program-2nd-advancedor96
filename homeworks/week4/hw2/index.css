@@ -24,6 +24,9 @@ html, body{
 input[type='text']{
   padding-left: 10px;
 }
+.red{
+  color: red;
+}
 .title{
   text-align: center;
 }
