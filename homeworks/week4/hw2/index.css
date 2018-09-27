@@ -5,12 +5,27 @@ html, body{
    margin: 0;
    padding: 0;
    width: 100%;
-   
+   height: auto;
+   position: relative;
+   background-color: rgb(240, 238, 232);
+}
+.upper{
+  height:278px;
+  background-color: rgb(175, 142, 85);
 }
 .container{
-  max-width: 930px;
-  margin: 0 auto;
-  /* border: 1px solid #000; */
+  max-width: 640px;
+  background-color: white;
+  padding: 10px 35px;
+  margin: -100px auto 20px;
+  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.6);
+  border-top: 8px solid rgb(203, 172, 117);
+}
+input[type='text']{
+  padding-left: 10px;
+}
+.title{
+  text-align: center;
 }
 .bigInput{
   width: 100%;
@@ -20,7 +35,7 @@ html, body{
   font-size: 26px;
 }
 .section{
-   padding: 10px 20px;
+   padding: 10px 5px;
    margin-bottom: 9px;
    border-radius: 3px;
 }
