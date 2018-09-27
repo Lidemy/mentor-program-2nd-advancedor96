@@ -7,6 +7,20 @@ html, body{
    width: 100%;
    
 }
+.container{
+  max-width: 930px;
+  margin: 0 auto;
+  /* border: 1px solid #000; */
+}
+.bigInput{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  font-size: 26px;
+}
 .section{
    padding: 10px 20px;
+   margin-bottom: 9px;
+   border-radius: 3px;
 }
