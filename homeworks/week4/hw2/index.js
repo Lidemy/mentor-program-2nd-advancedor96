@@ -26,19 +26,22 @@ relative.addEventListener('blur', function(e){
 
 let btn = document.querySelector('.submit');
 btn.addEventListener('click', function(){
-  let isGood = true;
+  checkEmail()
+  check('#nickname')
+  check('#work')
+  check('#relative')
   if( checkEmail() &&  check('#nickname') && check('#work') && check('#relative') ){
     if ( document.querySelectorAll('.type:checked').length === 0){
       document.querySelector('.type').parentNode.style.backgroundColor='pink'
     }else{
       document.querySelector('.type').parentNode.style.backgroundColor='rgba(0,0,0,0)'
 
-      console.log('email:',email.value)
-      console.log('nickname:',nickname.value)
-      console.log('type:',document.querySelectorAll('.type:checked')[0].value)
-      console.log('work:',work.value)
-      console.log('relative:',relative.value)
-      console.log('other:',document.querySelector('#other').value)
+      console.log('電子信箱:',email.value)
+      console.log('暱稱:',nickname.value)
+      console.log('報名類型:',document.querySelectorAll('.type:checked')[0].value)
+      console.log('職業:',work.value)
+      console.log('相關經驗:',relative.value)
+      console.log('其他:',document.querySelector('#other').value)
       
       alert('表單送出，資料請看console')
     }

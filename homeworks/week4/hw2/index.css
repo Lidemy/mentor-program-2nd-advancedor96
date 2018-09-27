@@ -17,7 +17,7 @@ html, body{
   max-width: 640px;
   background-color: white;
   padding: 10px 35px;
-  margin: -100px auto 20px;
+  margin: -100px auto 70px;
   box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.6);
   border-top: 8px solid rgb(203, 172, 117);
 }
@@ -36,6 +36,7 @@ input[type='text']{
   border-bottom: 1px solid;
   outline: none;
   font-size: 26px;
+  background: transparent;
 }
 .section{
    padding: 10px 5px;
