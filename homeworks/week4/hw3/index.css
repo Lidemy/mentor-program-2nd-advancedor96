@@ -1,0 +1,63 @@
+body {
+  background: black url("./images/background.jpg") no-repeat fixed; }
+
+.black_background {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+}
+
+.container {
+  max-width: 1000px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; 
+}
+.item {
+  transition: box-shadow 0.5s;
+  width: 300px;
+  margin: 10px; }
+  .item img {
+    width: 100%; }
+  .item:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 15px  black; }
+  .item:hover .preview {
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5); }
+
+.preview {
+  transition: -webkit-filter 0.5s; }
+
+.bottom {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.owner {
+  width: 20%;
+  margin: 10px 20px 10px 10px; }
+  .owner img {
+    border-radius: 50%; }
+
+.description {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  color: white; 
+}
+.channel{
+  /*讓文字超出範圍顯示 ....*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+}
+.name{
+  /*讓文字超出範圍顯示 ....*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+
+}
