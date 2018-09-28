@@ -35,26 +35,26 @@ PATCH 方法套用指定資源的部份修改。
 * 填完Google表單後按下送出，資料會透過POST ，放在HTTP Request 的  body 裡面傳，這就是 POST 方法。
 
 ## 5.什麼是 RESTful API？
-Representational State Transfer，簡稱REST，它是一種網路架構風格，他並不是一種標準。
+Representational State Transfer，簡稱REST，它是一種網路架構風格，他並不是一種標準。  
 
-而 RESTful 可以這樣子想像: 美麗 (Beauty) 的事物可以稱為 Beautiful; 設計為 REST 的系統就可以稱為 RESTful
+而 RESTful 可以這樣子想像: 美麗 (Beauty) 的事物可以稱為 Beautiful; 設計為 REST 的系統就可以稱為 RESTful  
 
 以 API 而言，假設我們正在撰寫一組待辦事項的 API，
-可能會有以下方式來作為 API 的 interface:
+可能會有以下方式來作為 API 的 interface:    
 
-獲取使用者資料 /getAllUsers
-獲取使用者資料 /getUser/1
-新增使用者資料 /createUser
-更新使用者資料 /updateUser/1
-刪除使用者資料 /deleteUser/1
+獲取使用者資料 /getAllUsers  
+獲取使用者資料 /getUser/1  
+新增使用者資料 /createUser  
+更新使用者資料 /updateUser/1  
+刪除使用者資料 /deleteUser/1  
 
 若是以 REST 風格來開發 RESTful API 的話:
 
-獲取使用者資料 /GET /users
-獲取使用者資料 /GET /user/1
-新增使用者資料 /POST /user
-更新使用者資料 /PUT /user/1
-刪除使用者資料 /DELETE /user/1
+獲取使用者資料 /GET /users  
+獲取使用者資料 /GET /user/1  
+新增使用者資料 /POST /user  
+更新使用者資料 /PUT /user/1  
+刪除使用者資料 /DELETE /user/1  
 
 兩者差異是在於 RESTful API 充分地使用了 HTTP protocol (GET/POST/PUT/DELETE)
 
