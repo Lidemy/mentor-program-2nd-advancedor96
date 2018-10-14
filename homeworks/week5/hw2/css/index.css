@@ -1,0 +1,14 @@
+.card{
+   margin: 20px 0;
+}
+.post{
+   margin: 10px 0;
+   /* width: 400px; */
+   box-shadow: 1px 1px 30px #ccc;
+   padding: 5px 10px;
+   /* display: inline-block; */
+}
+.comment{
+   background-color: #eacdcd;
+   margin: 5px 0;
+}

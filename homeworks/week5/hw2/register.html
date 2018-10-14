@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>註冊</title>
+   <link rel="stylesheet" href="./css/bulma.min.css">
+</head>
+<body>
+<section class="section">
+   <div class="container">
+   <h1 class="title">註冊</h1>
+   <form action="controller.php" method="POST" class="reg_form">
+
+      <div class="field">
+         <label class="label">帳號</label>
+         <div class="control">
+            <input type="text" autofocus name="account" class="input account" />
+         </div>
+      </div>
+
+      <div class="field">
+         <label class="label">暱稱</label>
+         <div class="control">
+            <input type="text" name="nickname" class="input nickname" />
+         </div>
+      </div>
+      
+      <div class="field">
+         <label class="label">密碼</label>
+         <div class="control">
+            <input type="password" name="pwd" class="input pwd" />
+         </div>
+      </div>
+
+      <div class="field">
+         <label class="label">再次輸入密碼</label>
+         <div class="control">
+            <input type="password" name="pwd2" class="input pwd2" />
+         </div>
+      </div>
+
+      <input type="hidden" name="type" value="register" />
+
+      <div class="field is-grouped">
+         <div class="control">
+            <button class="button is-link reg_btn">註冊</button>
+         </div>
+      </div>
+   </form>
+</div>
+</section>
+<script>
+   let account = document.querySelector('.account');
+   let nickname = document.querySelector('.nickname');
+   let pwd = document.querySelector('.pwd');
+   let pwd2 = document.querySelector('.pwd2');
+   let reg_btn = document.querySelector('.reg_btn');
+   let reg_form = document.querySelector('.reg_form');
+
+   reg_btn.addEventListener('click', function(e){
+      e.preventDefault();
+      
+      if(pwd.value !== pwd2.value){
+         alert('兩次密碼欄位不一致');
+         return ;
+      }
+      if(account.value.trim().length === 0){alert('帳號不可為空'); return ;}
+      if(nickname.value.trim().length === 0){alert('暱稱不可為空'); return ;}
+      if(pwd.value.trim().length === 0){alert('密碼不可為空'); return ;}
+      if(pwd2.value.trim().length === 0){alert('密碼不可為空'); return ;}
+      reg_form.submit();
+   })
+</script>
+</body>
+</html>
